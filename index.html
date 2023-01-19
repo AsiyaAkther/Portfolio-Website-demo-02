@@ -14,10 +14,10 @@
 </head>
 <body>
     <!-- ===================== Header start here ===================== -->
-    <header>
-        <div class="container">
-            <!-- Menubar start here -->
-            <div id="menubar">
+    <header id="header">
+        <!-- Menubar start here -->
+        <div id="menubar">
+            <div class="container">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="LOGO"></a>
@@ -25,7 +25,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                                 </li>
@@ -45,59 +45,63 @@
                                     <a class="nav-link" href="#">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link mr-0" href="#">Contact</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="component_btn">
-                            <a href="">Components</a>
+                        <div class="component_button">
+                            <a href="" class="btn btn-primary component_btn all-btn">Components</a>
                         </div>
                     </div>
                 </nav>
             </div>
-            <!-- Menubar end here -->
-            <div id="hero_section">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div id="hero_section_text">
-                            <p>hello,I'm</p>
-                            <h1>Asiya Akther</h1>
-                            <p>Web Developer</p>
-                            <a href="#">Hire Me</a>
-                            <a href="#">Download CV</a>
-                            <div class="social_icons">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-google-plus-g"></i>
-                                <i class="fa-brands fa-github-alt"></i>
-                                <i class="fa-brands fa-twitter"></i>
+        </div>
+        <!-- Menubar end here -->
+        <div id="hero_section">
+            <div class="container">
+                <div class="hero_content_area">
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <div id="hero_section_text">
+                                <p class="hello_pera">hello,I'm</p>
+                                <h1>Asiya Akther</h1>
+                                <p class="intro_pera">Web Developer</p>
+                                <a href="#" class="btn btn-primary hire-btn all-btn">Hire Me</a>
+                                <a href="#" class="btn btn-primary download-btn all-btn">Download CV</a>
+                                <ul class="social_icons">
+                                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                                    <li><i class="fa-brands fa-google-plus-g"></i></li>
+                                    <li><i class="fa-brands fa-github-alt"></i></li>
+                                    <li><i class="fa-brands fa-twitter"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-7">
+                            <div id="hero_section_img">
+                                <img class="img-fluid" src="images/man.svg" alt="Hero Image">
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6">
-                        <div id="hero_section_img">
-                            <img class="img-fluid" src="images/man.svg" alt="Hero Image">
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <div class="hedaer_counter">
-                <div class="row">
-                    <div class="col-xl-4">
-                        <div class="counter_main">
-                            <span class = "counter">124</span>
-                            <p>Happy Clients</p>
+                <div class="hedaer_counter">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="counter_main">
+                                <span class = "counter">124</span>
+                                <p>Happy Clients</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="counter_main">
-                            <span class = "counter">456</span>
-                            <p>Project Completed</p>
+                        <div class="col-xl-4">
+                            <div class="counter_main">
+                                <span class = "counter">456</span>
+                                <p>Project Completed</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="counter_main">
-                            <span class = "counter">789</span>
-                            <p>Awards Win</p>
+                        <div class="col-xl-4">
+                            <div class="counter_main border-0">
+                                <span class = "counter">789</span>
+                                <p>Awards Win</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,14 +118,14 @@
                 <div class="row">
                     <div class="col-xl-4">
                         <div id="about_img">
-                            <img src="images/avatar-1.jpg" alt="About Image">
+                            <img src="images/about-img.jpg" alt="About Image">
                         </div>
                     </div>
                     <div class="col-xl-8">
                         <div id="about_txt">
                             <h3>Asiya Akther</h3>
-                            <p>Web Developer</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi reiciendis quibusdam porro eum commodi doloribus, neque mollitia est sit ad inventore obcaecati veniam vitae, iste qui voluptates quos eaque officia nisi id. Odit error incidunt molestiae quisquam, magni a eius quos vero perferendis dignissimos, reiciendis, dolore qui doloremque atque.</p>
+                            <p class="title">Web Developer</p>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi reiciendis quibusdam porro eum commodi doloribus, neque mollitia est sit ad inventore obcaecati veniam vitae, iste qui voluptates quos eaque officia nisi id. Odit error incidunt molestiae quisquam, magni a eius quos vero perferendis dignissimos, reiciendis, dolore qui doloremque atque.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quas blanditiis inventore fugiat sint rem minima voluptatum enim doloremque, eligendi, maxime quisquam vitae aliquam deleniti doloribus. Cum dolore fuga beatae?</p>
                         </div>
                     </div>
@@ -134,9 +138,9 @@
         <section id="service">
             <div class="container">
                 <div class="section_heading">
-                    <p>Service</p>
+                    <p class="title">Service</p>
                     <h3>What I Do</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. rerum commodi corrupti, temporibus non quam.</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. rerum commodi corrupti, temporibus non quam.</p>
                 </div>
                 <div id="service_card">
                     <div class="row">
@@ -419,9 +423,13 @@
 
     
     
-
+    <!-- Jquary js -->
+    <script src="js/jquery.min.js"></script>
     <!-- boostrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- counter javascript -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
     <!-- Theme js -->
     <script src="js/main.js"></script>
 </body>
