@@ -41,23 +41,15 @@ section{
 /* ================== Common codes ends here =============== */
 
 /* ================== Navbar codes start here =============== */
-#menubar{
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(240,235,240,1);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(240,235,240,1);
-    box-shadow: 0px 0px 30px 0px rgba(240,235,240,1);
-    height: 90px;
-    width: 100%;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    z-index: 999;
+#header{
+    background-color: #ffff;
 }
 #menubar .navbar-brand img{
-    width: 100px;
+    width: 200px;
 }
 #menubar .navbar-nav .nav-item .nav-link{
     font-size: 15px;
-    color: #6d7379;
+    color: #203647;
     font-weight: 500;
     text-transform: uppercase;
     margin-right: 25px;
@@ -66,29 +58,28 @@ section{
     transition: 1s;
 }
 #menubar .navbar-nav .nav-item .nav-link:hover{
-    border-bottom: 1px solid #ff5c31;
+    border-bottom: 1px solid #efa500;
     transition: 1s;
 }
 #menubar .component_button .component_btn{
-    background-color: #ff5c31;
-    border: 1px solid #ff5c31;
+    background-color: #efa500;
+    border: 1px solid #efa500;
     transition: 1s;
 }
 #menubar .component_button .component_btn:hover{
     background-color: #fff;
-    border: 1px solid #ff5c31;
+    border: 1px solid #efa500;
     transition: 1s;
-    color: #ff5c31
+    color: #efa500
 }
 /* ================== Navbar codes ends here =============== */
 
 /* ================== Hero section codes start here =============== */
 #hero_section{
     position: relative;
-    border-bottom: 1px solid #dee2e6;
 }
 #hero_section #hero_section_text{
-    padding-top: 250px;
+    padding-top: 150px;
 }
 #hero_section #hero_section_text .hello_pera{
     font-size: 24px;
@@ -113,7 +104,6 @@ section{
 }
 #hero_section #hero_section_img img{
     width: 700px;
-    padding-top: 90px;
 }
 .social_icons{
     margin: 0;
