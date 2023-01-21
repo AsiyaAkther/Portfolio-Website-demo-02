@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
 }
 section{
-    padding-top: 100px;
+    padding: 100px 0;
 }
 .section_heading h3{
     font-size: 35px;
@@ -38,18 +38,22 @@ section{
     font-weight: 500;
     color: #6d7379;
 }
+.section_heading .description{
+    width: 550px;
+    margin: 0 auto;
+}
 /* ================== Common codes ends here =============== */
 
 /* ================== Navbar codes start here =============== */
 #header{
-    background-color: #ffff;
+    background-color: #eefbfb;
 }
 #menubar .navbar-brand img{
     width: 200px;
 }
 #menubar .navbar-nav .nav-item .nav-link{
     font-size: 15px;
-    color: #203647;
+    color: #495057;
     font-weight: 500;
     text-transform: uppercase;
     margin-right: 25px;
@@ -58,19 +62,19 @@ section{
     transition: 1s;
 }
 #menubar .navbar-nav .nav-item .nav-link:hover{
-    border-bottom: 1px solid #efa500;
+    border-bottom: 1px solid #007cc7;
     transition: 1s;
 }
 #menubar .component_button .component_btn{
-    background-color: #efa500;
-    border: 1px solid #efa500;
+    background-color: #007cc7;
+    border: 1px solid #007cc7;
     transition: 1s;
 }
 #menubar .component_button .component_btn:hover{
-    background-color: #fff;
-    border: 1px solid #efa500;
+    background-color: transparent;
+    border: 1px solid #007cc7;
     transition: 1s;
-    color: #efa500
+    color: #007cc7
 }
 /* ================== Navbar codes ends here =============== */
 
@@ -94,13 +98,25 @@ section{
     margin-bottom: 20px;
 }
 #hero_section #hero_section_text .hire-btn{
-    background-color: #ff5c31;
-    border: 1px solid #ff5c31;
+    background-color: #007cc7;
+    border: 1px solid #007cc7;
     margin-right: 10px;
+    transition: 1s;
+}
+#hero_section #hero_section_text .hire-btn:hover{
+    background-color: transparent;
+    color: #007cc7;
+    transition: 1s;
 }
 #hero_section #hero_section_text .download-btn{
-    background-color: black;
-    border: 1px solid black;
+    background-color: #203647;
+    border: 1px solid #203647;
+    transition: 1s;
+}
+#hero_section #hero_section_text .download-btn:hover{
+    background-color: transparent;
+    color: #203647;
+    transition: 1s;
 }
 #hero_section #hero_section_img img{
     width: 700px;
@@ -114,19 +130,28 @@ section{
     float: left;
     list-style-type: none;
     margin-right: 15px;
-    border: 2px solid #ff5c31;
+    border: 2px solid #007cc7;
     width: 35px;
     height: 35px;
     text-align: center;
     border-radius: 50%;
     padding-top: 4px;
+    color: #007cc7;
+    transition: 1s;
 }
 .social_icons li:last-child{
     margin-right: 0px;
 }
 .social_icons li i{
     font-size: 18px;
-    color: #ff5c31;
+}
+.social_icons li:hover{
+    background-color: #007cc7;
+    
+    transition: 1s;
+}
+.social_icons li a:hover{
+    color:#ffffff;
 }
 #hero_section .hedaer_counter{
     width:70%;
@@ -156,6 +181,15 @@ section{
 /* ================== About section codes start here =============== */
 #about{
     padding-top: 150px;
+    background-color: #e1f1fa;
+    position: relative;
+    z-index: -1;
+}
+#about_txt{
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #about_txt h3{
     font-size: 35px;
@@ -168,9 +202,43 @@ section{
 }
 #about_txt .description{
     margin-top: 20px;
+    margin-bottom: 10px;
+}
+#about_img{
+    position: relative;
+    background: linear-gradient(#eefbfb, #9fecec);
 }
 #about_img img{
-    width: 100%;
-    border-radius: 10px;
+    width: 95%;
+}
+#about_img::before{
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -5px;
+    width: 50%;
+    height: 50%;
+    background: #007cc7;
+    z-index: -1;
+}
+#about_img::after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    right: -5px;
+    width: 50%;
+    height: 50%;
+    background: #007cc7;
+    z-index: -1;
 }
 /* ================== About section codes end here =============== */
+
+/* ================== Service section codes start here =============== */
+#service{
+    background-color: #eefbfb;
+    text-align: center;
+}
+#service_card{
+    margin-top: 50px;
+}
+/* ================== Service section codes end here =============== */
