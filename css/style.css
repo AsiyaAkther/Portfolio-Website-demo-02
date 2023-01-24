@@ -241,52 +241,44 @@ section{
 #service_card{
     margin-top: 50px;
 }
-/* ================== Service section codes end here =============== */
-
-#body-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #333;
-}
-.container{
+.service_card{
+    height: 450px;
     position: relative;
     display: flex;
     padding: 80px 40px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 30px;
 }
-.card{
+.single_card{
     position: relative;
-    width: 350px;
+    width: 325px;
     height: 180px;
-    background: #333;
+    background: #4da8da;
     transition: 0.5s;
 }
-.card:hover{
+.single_card:hover{
     height: 450px;
 }
-.card .lines{
+.single_card .lines{
     position: absolute;
     inset: 0;
-    background: #000;
+    background: #12232e;
     overflow: hidden;
 }
-.card .lines::before{
+.single_card .lines::before{
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     width: 600px;
     height: 120px;
-    background: linear-gradient(transparent, #45f3ff, #45f3ff, #45f3ff, transparent);
+    background: linear-gradient(transparent, #5bf6fc, #5bf6fc, #5bf6fc, transparent);
     animation: animate 4s linear infinite;
     animation-play-state: paused;
 }
-.card:hover .lines::before{
+.single_card:hover .lines::before{
     animation-play-state: running;
 }
 @keyframes animate {
@@ -297,20 +289,20 @@ section{
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-.card .lines::after{
+.single_card .lines::after{
     content: '';
     position: absolute;
-    inset: 3px;
-    background: #292929;
+    inset: 4px;
+    background: #203647;
 }
-.card .imgBx{
+.single_card .imgBx{
     position: absolute;
     top: -60px;
     left: 50%;
     width: 150px;
     height: 150px;
     transform: translateX(-50%);
-    background: #000;
+    background: #12232e;
     transition: 0.5s;
     z-index: 10;
     overflow: hidden;
@@ -318,12 +310,12 @@ section{
     justify-content: center;
     align-items: center;
 }
-.card:hover .imgBx{
+.single_card:hover .imgBx{
     top: 25px;
     width: 250px;
-    height: 250px;
+    height: 200px;
 }
-.card .imgBx::before{
+.single_card .imgBx::before{
     content: '';
     position: absolute;
     top: 50%;
@@ -335,7 +327,7 @@ section{
     animation: animate2 6s linear infinite;
     animation-play-state: paused;
 }
-.card:hover .imgBx::before{
+.single_card:hover .imgBx::before{
     animation-play-state: running;
 }
 @keyframes animate2 {
@@ -346,13 +338,13 @@ section{
         transform: translate(-50%,-50%) rotate(0deg);
     }
 }
-.card .imgBx::after{
+.single_card .imgBx::after{
     content: '';
     position: absolute;
-    inset: 3px;
-    background: #292929;
+    inset: 4px;
+    background: #203647;
 }
-.card .imgBx img{
+.single_card .imgBx img{
     position: absolute;
     z-index: 1;
     filter: invert(1);
@@ -360,6 +352,52 @@ section{
     transition: 0.5s;
     width: 100px;
 }
-.card:hover .imgBx img{
+.single_card:hover .imgBx img{
     opacity: 1;
 }
+.single_card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.single_card .content .details{
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
+}
+.single_card:hover .content .details{
+    transform: translateY(0px);
+}
+.single_card .content .details h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #5bf6fc;
+    line-height: 1.2em;
+}
+.single_card .content .details p{
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.single_card .content .details a{
+    display: inline-block;
+    padding: 8px 15px;
+    background: #5bf6fc;
+    color: #292929;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+.single_card:hover .content .details p, .single_card:hover .content .details a{
+    opacity: 1;
+}
+/* ================== Service section codes end here =============== */
