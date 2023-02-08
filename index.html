@@ -191,35 +191,61 @@
         <section id="skill">
             <div class="container">
                 <div class="section_heading">
-                    <p>Skill</p>
+                    <p class="title">Skill</p>
                     <h3>Why Choose me</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos.
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos.
                     rerum commodi corrupti, temporibus non quam.</p>
                 </div>
                 <div class="skill_details">
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="single_skill">
-                                <p>PSD to HTML</p>
-                                <progress value="80" max="100"></progress>
+                    <div class="progress_card">
+                        <div class="progress" style="--color:#dd4b25; --number: 95;">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="parcent_num">
+                                <h2>95<span>%</span></h2>
+                                <p>HTML</p>
                             </div>
                         </div>
-                        <div class="col-xl-6">
-                            <div class="single_skill">
-                                <p>Figma to HTML</p>
-                                <progress value="72" max="100"></progress>
+                    </div>
+                    <div class="progress_card">
+                        <div class="progress" style="--color:#254bdd; --number: 85;">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="parcent_num">
+                                <h2>85<span>%</span></h2>
+                                <p>CSS</p>
                             </div>
                         </div>
-                        <div class="col-xl-6">
-                            <div class="single_skill">
-                                <p>Responsive Design</p>
-                                <progress value="85" max="100"></progress>
+                    </div>
+                    <div class="progress_card">
+                        <div class="progress" style="--color:#cfb431; --number: 55;">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="parcent_num">
+                                <h2>55<span>%</span></h2>
+                                <p>JavaScript</p>
                             </div>
                         </div>
-                        <div class="col-xl-6">
-                            <div class="single_skill">
-                                <p>Wordpress</p>
-                                <progress value="90" max="100"></progress>
+                    </div>
+                    <div class="progress_card">
+                        <div class="progress" style="--color:#04fc43; --number: 70;">
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="parcent_num">
+                                <h2>70<span>%</span></h2>
+                                <p>Responsive</p>
                             </div>
                         </div>
                     </div>
@@ -238,12 +264,26 @@
                     rerum commodi corrupti, temporibus non quam.</p>
                 </div>
                 <div class="my_works">
-                    <img src="images/portfolio1.jpg" alt="portfolio image one" width="32%">
-                    <img src="images/portfolio1.jpg" alt="portfolio image two" width="32%">
-                    <img src="images/portfolio3.jpg" alt="portfolio image three" width="32%">
-                    <img src="images/portfolio4.jpg" alt="portfolio image four" width="32%">
-                    <img src="images/portfolio5.jpg" alt="portfolio image five" width="32%">
-                    <img src="images/portfolio6.jpg" alt="portfolio image six" width="32%">
+                    <div class="grid">
+                        <div class="grid-item">
+                            <img src="images/portfolio1.jpg" alt="portfolio image one">
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/portfolio2.jpg" alt="portfolio image two">
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/portfolio3.jpg" alt="portfolio image three">
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/portfolio4.jpg" alt="portfolio image four">
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/portfolio5.jpg" alt="portfolio image five">
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/portfolio6.jpg" alt="portfolio image six">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -434,10 +474,12 @@
 
 
 
-    
-    
+
+
     <!-- Jquary js -->
     <script src="js/jquery.min.js"></script>
+    <!-- counter javascript -->
+    <script src="js/isotope.pkgd.min.js"></script>
     <!-- boostrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- counter javascript -->

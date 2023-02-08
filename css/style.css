@@ -48,6 +48,9 @@ section{
 #header{
     background-color: #eefbfb;
 }
+#menubar{
+    padding: 30px 0;
+}
 #menubar .navbar-brand img{
     width: 200px;
 }
@@ -147,7 +150,7 @@ section{
 }
 .social_icons li:hover{
     background-color: #007cc7;
-    
+
     transition: 1s;
 }
 .social_icons li a:hover{
@@ -190,6 +193,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 50px;
 }
 #about_txt h3{
     font-size: 35px;
@@ -264,7 +268,7 @@ section{
 .single_card .lines{
     position: absolute;
     inset: 0;
-    background: #12232e;
+    background: #9da8b3;
     overflow: hidden;
 }
 .single_card .lines::before{
@@ -274,7 +278,7 @@ section{
     left: 50%;
     width: 600px;
     height: 120px;
-    background: linear-gradient(transparent, #5bf6fc, #5bf6fc, #5bf6fc, transparent);
+    background: linear-gradient(transparent, #007cc7, #007cc7, #007cc7, transparent);
     animation: animate 4s linear infinite;
     animation-play-state: paused;
 }
@@ -293,7 +297,7 @@ section{
     content: '';
     position: absolute;
     inset: 4px;
-    background: #203647;
+    background: #e1f1fa;
 }
 .single_card .imgBx{
     position: absolute;
@@ -302,7 +306,7 @@ section{
     width: 150px;
     height: 150px;
     transform: translateX(-50%);
-    background: #12232e;
+    background: #9da8b3;
     transition: 0.5s;
     z-index: 10;
     overflow: hidden;
@@ -323,7 +327,7 @@ section{
     width: 500px;
     height: 150px;
     transform: translate(-50%,-50%);
-    background: linear-gradient(transparent, #ff3c7b, #ff3c7b, #ff3c7b, transparent);
+    background: linear-gradient(transparent, #9fecec, #9fecec, #9fecec, transparent);
     animation: animate2 6s linear infinite;
     animation-play-state: paused;
 }
@@ -342,18 +346,18 @@ section{
     content: '';
     position: absolute;
     inset: 4px;
-    background: #203647;
+    background: #e1f1fa;
 }
 .single_card .imgBx img{
     position: absolute;
     z-index: 1;
-    filter: invert(1);
     opacity: 0.5;
     transition: 0.5s;
-    width: 100px;
+    width: 70px;
 }
 .single_card:hover .imgBx img{
     opacity: 1;
+    width: 100px;
 }
 .single_card .content{
     position: absolute;
@@ -377,11 +381,11 @@ section{
 .single_card .content .details h2{
     font-size: 20px;
     font-weight: 500;
-    color: #5bf6fc;
+    color: #495057;
     line-height: 1.2em;
 }
 .single_card .content .details p{
-    color: #fff;
+    color: #495057;
     font-size: 14px;
     opacity: 0;
     transition: 0.5s;
@@ -389,8 +393,8 @@ section{
 .single_card .content .details a{
     display: inline-block;
     padding: 8px 15px;
-    background: #5bf6fc;
-    color: #292929;
+    background: #007cc7;
+    color: #ffffff;
     margin-top: 10px;
     font-weight: 500;
     text-decoration: none;
@@ -401,3 +405,125 @@ section{
     opacity: 1;
 }
 /* ================== Service section codes end here =============== */
+
+/* ================== skill section codes start here =============== */
+#skill{
+    text-align: center;
+}
+#skill .skill_details{
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#skill .skill_details .progress_card{
+    position: relative;
+    width: 25%;
+    height: 250px;
+    background: #A3ECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 50px 0 50px;
+}
+#skill .skill_details .progress_card .progress{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+#skill .skill_details .progress_card .progress svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+    background: #A3ECEC;
+}
+#skill .skill_details .progress_card .progress svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 2;
+    stroke: #203647;
+    transform: translate(5px,5px);
+}
+#skill .skill_details .progress_card .progress svg circle:nth-child(2){
+    stroke: var(--color);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--number)) / 100);
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#skill .skill_details .progress_card .progress .dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    animation: animateDot 2s linear forwards;
+}
+@keyframes animateDot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * var(--number)));
+    }
+}
+#skill .skill_details .progress_card .progress .dot::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--color), 0 0 30px var(--color);
+}
+#skill .skill_details .progress_card .progress .parcent_num{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+#skill .skill_details .progress_card .progress .parcent_num h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #495057;
+    font-weight: 700;
+    font-size: 40px;
+}
+#skill .skill_details .progress_card .progress .parcent_num h2 span{
+    font-weight: 300;
+    color: #495057;
+    font-size: 12px;
+}
+#skill .skill_details .progress_card .progress .parcent_num p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 2px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #495057;
+}
+/* ================== skill section codes end here =============== */
+.grid-item { width: 30%; }
+.grid-item img{
+    width: 100%;
+}
